@@ -12,7 +12,6 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
 </head>
-
 <body>
 <script src="produtos.js"></script>
     <nav class="nav">
@@ -28,14 +27,21 @@
     </nav>
     <div class="card">
 
-        <img id=ImagemPrincipal     class=imagemcard src="produto preto.png">
+        <img id="imagemPrincipal" class="imagemcard" src="produto preto.png">
         <div class="cardproduto">
-            <h2><strong>PetTimer - Preto comedouro e bebedouro automático</strong></h2>
+            <h2 id="tituloProduto">
+    <strong>PetTimer - Preto comedouro e bebedouro automático</strong>
+</h2>
             <br>
             <h3>Cores: Preto/Branco/Bege</h3>
-            <img class=produtopreto src="produto preto.png" width="50px">
-            <img class=produtobranco src="produto branco.png" width="50px">
-            <img class=produtobege src="produto bege.png" width="50px">
+           <img class="produtopreto" src="produto preto.png" width="50px"
+onclick="trocarProduto('produto preto.png', 'Preto')">
+
+<img class="produtobranco" src="produto branco.png" width="50px"
+onclick="trocarProduto('produto branco.png', 'Branco')">
+
+<img class="produtobege" src="produto bege.png" width="50px"
+onclick="trocarProduto('produto bege.png', 'Bege')"><br>
             <img class=estrelas src="5 estrelas.png" width="75px">
             <h3>Descrição</h3>
             <ul>
@@ -136,6 +142,7 @@
     </footer>
 
 
+<script src="produto.js"></script>
 </body>
 
 </html>
