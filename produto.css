@@ -260,3 +260,64 @@ footer{
 
     font-size: 24px;
 }
+.resultado-pesquisa{
+    width:350px;
+
+    background:white;
+
+    position:absolute;
+    top:85px;
+    right:320px;
+
+    border-radius:10px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+
+    overflow:hidden;
+
+    display:none;
+
+    z-index:9999;
+}
+
+.item-pesquisa{
+    display:flex;
+    align-items:center;
+
+    gap:12px;
+
+    padding:12px;
+
+    cursor:pointer;
+
+    text-decoration:none;
+
+    color:black;
+}
+
+.item-pesquisa:hover{
+    background:#f2f2f2;
+}
+
+.item-pesquisa img{
+    width:55px;
+    height:55px;
+
+    object-fit:contain;
+}
+
+.item-pesquisa p{
+    font-size:14px;
+}
+.pesquisa{
+    width:350px;
+    height:42px;
+
+    border:none;
+    border-radius:25px;
+
+    padding:0 18px;
+
+    outline:none;
+    font-size:15px;
+}
