@@ -54,3 +54,136 @@ function adicionarCarrinho(){
     "carrinho.html";
 
 }
+let produtos = [
+
+    {
+
+        nome:
+        "Ração Pedigree 10,1kg cachorro",
+
+        imagem:
+        "pedigree home.png",
+
+        pagina:
+        "produto.html"
+
+    },
+
+    {
+
+        nome:
+        "Ração Whiskas 10,1kg gato",
+
+        imagem:
+        "whiskas home.png",
+
+        pagina:
+        "produto.html"
+
+    },
+
+    {
+
+        nome:
+        "Brinquedo mordedor cachorro",
+
+        imagem:
+        "mordedor home.png",
+
+        pagina:
+        "produto.html"
+
+    },
+
+    {
+
+        nome:
+        "Comedouro PetTimer preto",
+
+        imagem:
+        "produtopreto.png",
+
+        pagina:
+        "produtopreto.html"
+
+    }
+
+];
+
+function pesquisar(){
+
+
+
+    let valor =
+    document.querySelector(".pesquisa")
+    .value.toLowerCase();
+
+
+
+    let resultado =
+    document.getElementById(
+        "resultadoPesquisa"
+    );
+
+
+
+    resultado.innerHTML = "";
+
+
+
+    if(valor == ""){
+
+        resultado.style.display =
+        "none";
+
+        return;
+
+    }
+
+
+
+    let encontrados =
+    produtos.filter((produto) =>
+
+        produto.nome
+        .toLowerCase()
+        .includes(valor)
+
+    );
+
+
+
+    if(encontrados.length == 0){
+
+        resultado.style.display =
+        "none";
+
+        return;
+
+    }
+
+
+
+    encontrados.forEach((produto) => {
+
+        resultado.innerHTML += `
+
+        <a href="${produto.pagina}"
+        class="item-pesquisa">
+
+            <img src="${produto.imagem}">
+
+            <p>${produto.nome}</p>
+
+        </a>
+
+        `;
+
+    });
+
+
+
+    resultado.style.display =
+    "block";
+
+}
