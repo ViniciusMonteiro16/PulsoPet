@@ -16,16 +16,40 @@
 <body>
 
     <nav class="nav">
-        <img src="logo pulsopet.png" width="auto">
+
+        <img src="logo.png" class="logo">
+
         <div class="TextoNav">
-            <h3>Início</h3>
-            <h3>Produtos</h3>
-            <h3>Sobre</h3>
-            <div class="icon">
-                <img class="perfil" src="perfil icon.png">
-            </div>
+
+            <input type="text"
+placeholder="Pesquisar..."
+class="pesquisa"
+onkeyup="pesquisar()">
+
+            <a href="paginahome.html">
+                <h3>Início</h3>
+            </a>
+
+            <a href="produtos.html">
+                <h3>Produtos</h3>
+            </a>
+
+            <a href="sobre.html">
+                <h3>Sobre</h3>
+            </a>
+
+            <a href="login.html">
+                <img class="perfil" src="user.png">
+            </a>
+
         </div>
+
     </nav>
+
+<div class="resultado-pesquisa"
+id="resultadoPesquisa">
+
+</div>
     <div class="card">
 
         <img class=imagemcard src="produto branco.png">
